@@ -6,7 +6,7 @@
           <use href="./images/sprite.svg#icon-logo"></use>
         </svg>
       </a>
-      <button type="button" class="menu__open-btn" data-menu-open="">
+      <button type="button" class="menu__open-btn js-open-menu" aria-expanded="false" aria-controls="open-menu">
         <svg class="menu__open-icon" width="20" height="12">
           <use href="./images/sprite.svg#icon-open-menu"></use>
         </svg>
@@ -14,9 +14,9 @@
     </div>
     
   </div>
-  <div class="backdrop is-hidden" data-menu>
-      <div class="menu " >
-        <button type="button" class="menu__close-btn" data-menu-close>
+  <!-- <div class="backdrop is-hidden"> -->
+      <div class="menu-container js-menu-container" id="modal-menu">
+        <button type="button" class="menu__close-btn js-close-menu">
           <svg class="menu__close-icon" width="14" height="14">
             <use href="./images/sprite.svg#icon-close-menu"></use>
           </svg>
@@ -39,5 +39,5 @@
             <a class="menu__link link" href="#contacts">Contact</a>
           </li>
         </ul>
-      </div>
+      <!-- </div> -->
 </header>
