@@ -503,6 +503,19 @@ function hmrAcceptRun(bundle, id) {
 }
 
 },{}],"8lqZg":[function(require,module,exports) {
+// mob menu
+(()=>{
+    const refs = {
+        openModalBtn: document.querySelector("[data-menu-open]"),
+        closeModalBtn: document.querySelector("[data-menu-close]"),
+        modal: document.querySelector("[data-menu]")
+    };
+    refs.openModalBtn.addEventListener("click", toggleModal);
+    refs.closeModalBtn.addEventListener("click", toggleModal);
+    function toggleModal() {
+        refs.modal.classList.toggle("is-hidden");
+    }
+})();
 
 },{}]},["85bBE","8lqZg"], "8lqZg", "parcelRequired7c6")
 

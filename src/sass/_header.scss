@@ -1,6 +1,114 @@
-.header{
-    color: var(--middle-accent-text-color);
-    margin-left: 25px;
-    font-size: 30px;
-    font-family: var(--accent-font-family);
+.header {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #ffb8ca;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+}
+
+.menu__open-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: block;
+  margin-left: auto;
+}
+
+.menu__open-icon {
+  fill: var(--accent-text-color);
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--main-text-color);
+  }
+}
+
+.menu {
+  width: 250px;
+  height: 110vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #e17992;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.menu__close-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.menu__close-icon {
+  fill: var(--main-text-color);
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-text-color);
+  }
+}
+
+.menu__btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 210px;
+  height: 44px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  padding: 0;
+  border-radius: 22px;
+  background-color: var(--main-text-color);
+  color: var(--accent-text-color);
+  font-family: var(--second-font-family);
+  @include font(700, 16px, 1.31, 0.03);
+  transition: background-color 250ms var(--timing-function);
+
+  &::after {
+    content: '';
+    background-image: url(../images/buttonarrow.svg);
+    width: 6px;
+    height: 8px;
+    background-size: contain;
+    margin-left: 28px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.menu__item {
+  border-top: 1px solid #e18298;
+
+  &:last-child {
+    border-bottom: 1px solid #e18298;
+  }
+}
+
+.menu__link {
+  display: block;
+  padding: 12px 0px;
+  font-family: var(--second-font-family);
+  @include font(700, 14px, 1.28, 0.03);
+  color: var(--main-text-color);
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
 }

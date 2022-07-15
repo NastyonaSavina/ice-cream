@@ -1,23 +1,26 @@
 // @import '~node_modules/modern-normalize/modern-normalize.css';
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .container {
-    min-width: 320px;
-    margin: 0 auto;
-    padding: 0 20px;
+  //   width: 100%;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
 
+  //   @include mobile {
+  //     width: 320px;
+  //   }
 
- 
-    @include tablet {
-        width: 768px;
-        padding: 0 16px;
-    }
+  @include tablet {
+    width: 768px;
+    padding: 0 16px;
+  }
 
-    @include desktop {
-        width: 1200px;
-        padding: 0 16px;
-    }
+  @include desktop {
+    width: 1200px;
+    padding: 0 16px;
+  }
 }

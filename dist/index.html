@@ -16,13 +16,67 @@
   </head>
   <body>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <header class="header"> Test</header>
+    <header class="header">
+  <div class="container">
+    <div class="header__container">
+      <a href="" class="header__logo link">
+        <svg class="logo__icon" width="200" height="50">
+          <use href="/sprite.f14d31f7.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <button type="button" class="menu__open-btn" data-menu-open="">
+        <svg class="menu__open-icon" width="20" height="12">
+          <use href="/sprite.f14d31f7.svg#icon-open-menu"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="menu is-hidde" data-menu="">
+      <button type="button" class="menu__close-btn" data-menu-close="">
+        <svg class="menu__close-icon" width="14" height="14">
+          <use href="/sprite.f14d31f7.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+      <button type="button" class="menu__btn">Buy now</button>
+      <ul class="menu__list list">
+        <li class="menu__item">
+          <a class="menu__link link" href="#">Home</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#">About us</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#">How it’s made?</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#">Our products</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
     
     
     
     
     
-    <section>COMMENT</section>
+    <section class="rewiews">
+  <div class="container">
+    <h2 class="rewiews__title is-hidden">Customer Reviews</h2>
+    <article>
+      <img srcset="/testimonials-first-85.eb438c6f.png  1x, /testimonials-first-170.c5795f49.png 2x" src="/testimonials-first-85.eb438c6f.png" alt="first user" class="rewiews__image">
+      <p class="rewiews__text">
+        Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam
+        sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis
+        in nibh vel risus.
+      </p>
+      <p class="rewiews__subtitle">Emily, Los Angeles</p>
+    </article>
+  </div>
+</section>
 
     <div>contacts</div>
     
