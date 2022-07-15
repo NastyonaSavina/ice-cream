@@ -1,5 +1,35 @@
 // @import '~node_modules/modern-normalize/modern-normalize.css';
 
+body {
+    font-family: DM Sans, sans-serif;
+}
+
 button {
     cursor: pointer;
+    border: none;
+    font-family: inherit;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: 2px solid tomato;
+
+    @include mobile {
+        width: 320px;
+    }
+
+    @include tablet {
+        width: 768px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @include desktop {
+        width: 1200px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 }
