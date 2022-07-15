@@ -116,3 +116,9 @@
     background-size: cover;
   }
 }
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  color: var(--accent-text-color);
+  font-size: 40px;
+}
