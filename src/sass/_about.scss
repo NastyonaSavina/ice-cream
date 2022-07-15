@@ -1,13 +1,14 @@
-<<<<<<< Updated upstream
 .about {
-    background-color: var(--background-middle-color);
-=======
+  background-color: var(--background-middle-color);
+}
+
 .about__label {
-    font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-text-align: center;
-text-transform: uppercase;
-color: #FFA5BA;
->>>>>>> Stashed changes
+  @include font(400, 18px, 21px, 0.04em);
+  font-family: var(--accent-font-family);
+  text-transform: uppercase;
+  text-align: center;
+  //   @media screen and (min-width: 768px) {
+  //     @include font(null, null, 1.36, null);
+  //   }
+  color: var(--middle-accent-text-color);
 }
