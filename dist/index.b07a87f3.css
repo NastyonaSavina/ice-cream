@@ -75,6 +75,16 @@ button {
   display: flex;
 }
 
+.backdrop {
+  width: 100vw;
+  height: 100%;
+  background-color: #5f5d5d49;
+  transition: opacity .3s, visibility .3s;
+  position: fixed;
+  top: 0;
+  overflow-y: scroll;
+}
+
 .menu__open-btn {
   background-color: #0000;
   border: none;
@@ -84,17 +94,17 @@ button {
 }
 
 .menu__open-icon {
-  fill: var(--accent-text-color);
-  transition: color 250ms var(--timing-function);
+  stroke: var(--accent-text-color);
+  transition: stroke 250ms var(--timing-function);
 }
 
 .menu__open-icon:hover, .menu__open-icon:focus {
-  fill: var(--main-text-color);
+  stroke: var(--main-text-color);
 }
 
 .menu {
-  width: 250px;
-  height: 110vh;
+  width: 100%;
+  height: 100vh;
   background-color: #e17992;
   padding-top: 60px;
   padding-left: 20px;
@@ -115,16 +125,16 @@ button {
 }
 
 .menu__close-icon {
-  fill: var(--main-text-color);
-  transition: color 250ms var(--timing-function);
+  stroke: var(--main-text-color);
+  transition: stroke 250ms var(--timing-function);
 }
 
 .menu__close-icon:hover, .menu__close-icon:focus {
-  fill: var(--accent-text-color);
+  stroke: var(--accent-text-color);
 }
 
 .menu__btn {
-  width: 210px;
+  width: 168px;
   height: 44px;
   background-color: var(--main-text-color);
   color: var(--accent-text-color);
@@ -137,11 +147,13 @@ button {
   justify-content: center;
   align-items: baseline;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.31;
-  display: inline-flex;
+  display: flex;
 }
 
 .menu__btn:after {
