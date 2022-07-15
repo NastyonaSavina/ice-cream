@@ -1,0 +1,61 @@
+.advantages {
+  background-color: #fff5f6;
+  padding-bottom: 60px;
+}
+.ingredients {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    font-family: 'Titan One';
+    width: 98px;
+    height: 56px;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: calc(36 / 41);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+    color: #d41443;
+  }
+  &__text {
+    font-family: 'DM Sans';
+    width: 230px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: calc(20 / 12);
+
+    color: #000000;
+  }
+
+  &__item::before {
+    display: block;
+    content: '';
+    margin-bottom: 16px;
+
+    height: 50px;
+
+    background-repeat: no-repeat;
+  }
+
+  &__milk:before {
+    display: block;
+    content: '';
+    margin-bottom: 16px;
+
+    height: 50px;
+
+    background-repeat: no-repeat;
+    background-image: url('../test-icecream/img/milk-ingredients.png');
+  }
+  &__apple::before {
+    background-image: url('../test-icecream/img/apple-ingredients.png');
+  }
+  &__heart::before {
+    background-image: url('../test-icecream/img/heart-ingredients.png');
+  }
+}
