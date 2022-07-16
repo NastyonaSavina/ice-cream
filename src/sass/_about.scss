@@ -1,5 +1,9 @@
 .about {
   background-color: var(--background-middle-color);
+  
+}
+
+.container--about {
   position: relative;
 }
 
@@ -38,6 +42,8 @@
   background-image: url(../images/about2.png);
   background-repeat: no-repeat;
   // background-position:
+
+  
 }
 
 .about__text {
@@ -63,7 +69,7 @@
   line-height: 18px;
   letter-spacing: 0.06em;
   display: flex;
-  // align-items: center;
+  align-items: center;
   text-align: center;
   min-width: 176px;
   min-height: 44px;
