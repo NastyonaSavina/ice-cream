@@ -371,11 +371,11 @@ color: var(--main-text-color);
 
 		@keyframes girl {
 			0% {
-				transform: translateX(210px) rotate(0deg);
+				transform: perspective(400) translateX(210px) rotate(0deg);
 			}
 			
 			100% {
-				transform: translate(0px) rotate(360deg);
+				transform: perspective(400) translate(0px) rotate(360deg);
 			}
 		}
 	}
