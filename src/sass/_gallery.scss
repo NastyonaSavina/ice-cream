@@ -144,15 +144,4 @@
       margin-top: 40px;
     }
   }
-
-  &__wrapper:nth-child(5) {
-    margin-top: -5px;
-    @include desktop {
-      margin-top: -20px;
-    }
-  }
-
-  &__wrapper:nth-child(6) {
-    margin-top: 10px;
-  }
 }
