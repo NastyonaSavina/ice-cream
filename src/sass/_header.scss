@@ -72,7 +72,7 @@
   transition: transform 250ms var(--timing-function);
 
   @include tablet {
-    width: 250px;
+    width: 35vw;
   }
 }
 
@@ -243,6 +243,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: 300ms;
+  z-index: 10;
 
   background-color: var(--main-text-color);
   border-radius: 10px;

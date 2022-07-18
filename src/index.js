@@ -3,39 +3,29 @@
 (() => {
   const refs = {
     openLocationBtn: document.querySelector('[data-location-open]'),
-    closeLocation: document.querySelector('[data-location-close]'),
+    closeLocationBtn: document.querySelector('[data-location-close]'),
     location: document.querySelector('[data-location]'),
+
+    openFranchiseBtn: document.querySelector('[data-franchise-open]'),
+    closeFranchiseBtn: document.querySelector('[data-franchise-close]'),
+    franchise: document.querySelector('[data-franchise]'),
+
+    // body: document.querySelector('body'),
   };
 
+  refs.openLocationBtn.addEventListener('click', toggleLocation);
+  refs.closeLocationBtn.addEventListener('click', toggleLocation);
 
-  refs.openLocationBtn.addEventListener("click", toggleLocation);
-  refs.openLocationBtn.addEventListener("click", toggleLocation);
-
+  refs.openFranchiseBtn.addEventListener('click', toggleFranchise);
+  refs.closeFranchiseBtn.addEventListener('click', toggleFranchise);
 
   function toggleLocation() {
     refs.location.classList.toggle('is-hidden');
-    refs.body.classList.toggle('no-scroll');
+    // refs.body.classList.toggle('no-scroll');
   }
-})();
-
-
-// SCRIPT_CONTACTS_MODAL_FRANCHISE
-
-(() => {
-  const refs = {
-    openFranchiseBtn: document.querySelector("[data-franchise-open]"),
-    closeFranchise: document.querySelector("[data-franchise-close]"),
-    franchise: document.querySelector("[data-franchise]"),
-  };
-
-  refs.openFranchiseBtn.addEventListener("click", toggleFranchise);
-  refs.openFranchiseBtn.addEventListener("click", toggleFranchise);
 
   function toggleFranchise() {
-    refs.franchise.classList.toggle("is-hidden");
-    refs.body.classList.toggle('no-scroll');
+    refs.franchise.classList.toggle('is-hidden');
+    // refs.body.classList.toggle('no-scroll');
   }
 })();
-
-
-
