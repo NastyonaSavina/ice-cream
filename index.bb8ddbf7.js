@@ -1,2 +1,0 @@
-!function(){var o={openLocationBtn:document.querySelector("[data-location-open]"),closeLocation:document.querySelector("[data-location-close]"),location:document.querySelector("[data-location]")};function t(){o.location.classList.toggle("is-hidden"),o.body.classList.toggle("no-scroll")}o.openLocationBtn.addEventListener("click",t),o.closeLocationBtn.addEventListener("click",t)}();
-//# sourceMappingURL=index.bb8ddbf7.js.map
